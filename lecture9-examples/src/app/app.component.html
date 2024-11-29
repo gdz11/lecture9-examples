@@ -1,0 +1,12 @@
+<h1>Router</h1>
+
+<a [routerLink]="['hello']" [routerLinkActive]="'active'">hello link</a> &nbsp; &nbsp;
+
+<a [routerLink]="['hello-with-params', 2, 'sort', 'ascending']" 
+   [queryParams]="{ page: 2}" 
+   [routerLinkActive]="'active'">
+  hello with params
+</a>
+
+
+<router-outlet></router-outlet>
